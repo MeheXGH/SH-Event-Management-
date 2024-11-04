@@ -1012,10 +1012,6 @@ video {
   font-size: 3vh;
 }
 
-.text-\[5px\] {
-  font-size: 5px;
-}
-
 .text-\[5vh\] {
   font-size: 5vh;
 }
@@ -1041,19 +1037,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[2px\] {
-  font-size: 2px;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-bold {
@@ -1130,18 +1113,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[px\] {
-  color: px;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[112\] {
-  color: 112;
 }
 
 .shadow {

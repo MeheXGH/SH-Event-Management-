@@ -20,3 +20,127 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+
+
+
+.ig-con{
+    min-height: 100vh;
+    background-color: #171717;
+}
+.wd-img-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wd-con{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5vh;
+    position: relative;
+}
+.wd-con img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+.wd-con p{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.393);
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wd-con:hover{
+    p{
+        height: 100%;
+    }
+    img{
+        transform: scale(1.1);
+        filter: blur(5px);
+    }
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal.active {
+    display: flex;
+  }
+  
+  .swiper-container {
+    width: 80%; /* Restrict width to fit nicely */
+    height: 80%; /* Adjust height proportionally */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Keep aspect ratio */
+    display: block;
+    object-fit: contain; /* Ensure images don't stretch */
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2000;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white; /* Ensure buttons are visible */
+    z-index: 2000;
+  }
+  
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .wd-con{
+        height: 70vw;
+        width: 70vw;
+    }
+    .wd-con p{
+        font-size: 3vw;
+    }
+}

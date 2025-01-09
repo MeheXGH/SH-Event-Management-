@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SH Event Managment</title>
+
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main relative h-screen">
+      <div class="page1 relative  overflow-hidden bg-[#171717]">
+        <div
+          class="nav-con flex h-[15vh]  items-center justify-between bg-[#171717] px-[2vh]"
+        >
+          <div
+            class="logo-con flex h-[15vh] w-[15vh] items-center justify-center overflow-hidden"
+          >
+            <a href="">
+              <img
+                class="h-full w-full object-cover"
+                src="img/logo-new.png"
+                alt="SH logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]"
+          >
+            <div class="icon-con flex items-center justify-center">
+              <i onclick="openSlide()" class="si-bars text-[8vh]"></i>
+            </div>
+          </div>
+
+          <div
+            class="menu-slid-con absolute -right-[100vw] top-0 z-50 h-[100vh] w-[100vw] bg-[#D8D9DA] px-[2vh] text-[#171717] sm:w-[40vw] sm:rounded-l-2xl lg:w-[30vw]"
+          >
+            <div
+              class="hb-close-con flex h-[15vh] items-end justify-end hover:text-[#61677A]"
+            >
+              <i
+                onclick="closeSlide()"
+                class="si-close absolute z-10 text-[9vh]"
+              ></i>
+            </div>
+            <div
+              class="menu-item flex h-[100%] w-[100%] flex-col items-center justify-center"
+            >
+              <div class="menu-item-con flex h-full flex-col items-start gap-4">
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">About</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Works</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Contact</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Loacation</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="ig-con">
+            <div class="wd-img-con ">
+
+                <div class="wd-con" onclick="openSlider()">
+                    <img src="./img/wd (1).jpg" alt="" />
+                    <p>Wedding setup 1</p>
+                  </div>
+
+
+                            <!-- Image Slider Modal -->
+                <div id="image-slider-modal" class="modal">
+                    <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <img src="./img/wd (1).jpg" alt="Wedding Setup 1" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="./img/wd (2).jpg" alt="Wedding Setup 2" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="./img/wd (3).jpg" alt="Wedding Setup 3" />
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    </div>
+                    <button class="close-btn" onclick="closeSlider()">Close</button>
+                </div>
+
+
+
+
+
+
+
+               <div class="wd-con relative ">
+                <img src="./img/wd (2).jpg" alt="" class="">
+                <p> wedding setup 2 </p>
+               </div>
+            </div>
+        </div>
+      <!--------------------------------------------------Footer ------------------------------------------------>
+
+      <div class="footer h-auto bg-[#171717] p-[2vh]">
+        <div
+          class="f-con flex min-h-[40vh] w-auto flex-wrap items-center justify-around gap-5 rounded-xl bg-[#4949491e] py-10 text-white"
+        >
+          <div class="f-logo bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]">
+              SH Event Management</i
+            >
+            <img
+              class="h-[25vh] w-[15vh] object-cover"
+              src="img/Logo-sh.png"
+              alt=""
+            />
+          </div>
+
+          <div class="f-s-link bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]"
+              >Social Media
+            </i>
+            <div class="s-links flex flex-col pt-3">
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-linkedin text-[3vh]"></i>
+                <i class="">&nbsp; Linkedin</i>
+              </a>
+              <a class="hover:text-[#f24de7]" href=""
+                ><i class="bi bi-instagram text-[3vh]"></i>
+                <i class="">&nbsp; Instagram</i></a
+              >
+              <a class="hover:text-[#959596]" href=""
+                ><i class="bi bi-twitter-x text-[3vh]"></i>
+                <i class="">&nbsp; Twitter X</i>
+              </a>
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-facebook text-[3vh]"></i>
+                <i class="">&nbsp; Facebook</i></a
+              >
+            </div>
+          </div>
+
+          <div class="f-info bg-slate-8003 h-full w-[35vh] p-2">
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> About
+            </a>
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i>Works</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Contact</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Loacation</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="copyr-con flex h-[10vh] w-full items-center justify-center text-white"
+        >
+          <p class="text-sm font-thin">
+            <i class="bi bi-c-circle"></i> 2024 SH Events Management. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -15,3 +15,32 @@ function closeSlide() {
     console.log("h000la")
 }
 
+
+
+
+
+
+
+
+
+
+const modal = document.getElementById('image-slider-modal');
+  let swiperInstance;
+
+  function openSlider() {
+    modal.classList.add('active');
+    if (!swiperInstance) {
+      swiperInstance = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true, // Enable looping
+        spaceBetween: 10, // Add some spacing between slides
+      });
+    }
+  }
+
+  function closeSlider() {
+    modal.classList.remove('active');
+  }

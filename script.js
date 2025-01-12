@@ -3,16 +3,18 @@ const siClose = document.querySelector(".si-close");
 
 function openSlide() {
     mSlid.style.right = "0"; // Set right to 0 to show the menu
+    document.body.style.overflow = "hidden"; 
     // siClose.style.opacity = "1"; // Show the close icon
 
-    console.log("hii")
+    // console.log("hii")
 }
 
 function closeSlide() {
     mSlid.style.right = "-100vw"; // Hide the menu offscreen (or use -100% for full width)
+    document.body.style.overflow = "auto";
     // siClose.style.opacity = "0"; // Hide the close icon
 
-    console.log("h000la")
+    // console.log("h000la")
 }
 
 
@@ -24,23 +26,22 @@ function closeSlide() {
 
 
 
-const modal = document.getElementById('image-slider-modal');
-  let swiperInstance;
+function openSlider(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.add('active');
 
-  function openSlider() {
-    modal.classList.add('active');
-    if (!swiperInstance) {
-      swiperInstance = new Swiper('.swiper-container', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true, // Enable looping
-        spaceBetween: 10, // Add some spacing between slides
-      });
-    }
-  }
+  // Initialize Swiper for the specific modal
+  new Swiper(`#${modalId} .swiper-container`, {
+    navigation: {
+      nextEl: `#${modalId} .swiper-button-next`,
+      prevEl: `#${modalId} .swiper-button-prev`,
+    },
+    loop: true, // Enable looping
+    spaceBetween: 10, // Add some spacing between slides
+  });
+}
 
-  function closeSlider() {
-    modal.classList.remove('active');
-  }
+function closeSlider(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.remove('active');
+}

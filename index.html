@@ -5,147 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SH Event Managment</title>
 
-    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css"
+    />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="main h-screen  relative ">
-
-      
-      <div class="page1 relative min-h-screen bg-[#171717] overflow-hidden">
-        
-        <div class="nav-con flex h-[15vh] items-center justify-between bg-[#171717] px-[2vh]  " >
-
-          <div class="logo-con flex h-[15vh] w-[15vh] items-center justify-center overflow-hidden" >
+    <div class="main relative h-screen">
+      <div class="page1 relative min-h-screen overflow-hidden bg-[#171717]">
+        <div
+          class="nav-con flex h-[15vh] items-center justify-between bg-[#171717] px-[2vh]"
+        >
+          <div
+            class="logo-con flex h-[15vh] w-[15vh] items-center justify-center overflow-hidden"
+          >
             <a href="">
               <img
-                class=" w-auto h-[15vh] object-cover"
+                class="h-[15vh] w-auto object-cover"
                 src="img/Logo-sh.png"
                 alt="SH logo"
               />
             </a>
           </div>
-  
-          <div class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]">
+
+          <div
+            class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]"
+          >
             <div class="icon-con flex items-center justify-center">
-              <i onclick="openSlide()" class="si-bars text-[8vh] "></i>
-              
+              <i onclick="openSlide()" class="si-bars text-[8vh]"></i>
             </div>
-  
-            
-  
           </div>
-  
-          <div class="menu-slid-con absolute -right-[100vw] top-0 h-[100vh]  w-[100vw] sm:w-[40vw] lg:w-[30vw] bg-[#D8D9DA] text-[#171717] sm:rounded-l-2xl px-[2vh] z-50 " >
-            <div class="hb-close-con h-[15vh]  flex items-end justify-end hover:text-[#61677A] ">
-              <i onclick="closeSlide()" class="si-close absolute z-10 text-[9vh] "></i>
+
+          <div
+            class="menu-slid-con absolute -right-[100vw] top-0 z-50 h-[100vh] w-[100vw] bg-[#D8D9DA] px-[2vh] text-[#171717] sm:w-[40vw] sm:rounded-l-2xl lg:w-[30vw]"
+          >
+            <div
+              class="hb-close-con flex h-[15vh] items-end justify-end hover:text-[#61677A]"
+            >
+              <i
+                onclick="closeSlide()"
+                class="si-close absolute z-10 text-[9vh]"
+              ></i>
             </div>
-            <div class="menu-item h-[100%] w-[100%] flex flex-col items-center justify-center">
-  
-             <div class="menu-item-con h-full flex flex-col items-start gap-4  ">
-              <a class="flex hover:text-[#61677A] " href=""> <i class="si-arrow-up-left text-[5vh] "></i> <h1 class="text-5xl font-semibold   " >About</h1> </a>
-  
-              <a class="flex hover:text-[#61677A] " href=""> <i class="si-arrow-up-left text-[5vh]"></i> <h1 class="text-5xl font-semibold   " >Works</h1> </a>
-  
-              <a class="flex hover:text-[#61677A] " href=""> <i class="si-arrow-up-left text-[5vh]"></i> <h1 class="text-5xl font-semibold   " >Contact</h1> </a>
-  
-              <a class="flex hover:text-[#61677A] " href=""> <i class="si-arrow-up-left text-[5vh]"></i> <h1 class="text-5xl font-semibold   " >Loacation</h1> </a>
-  
-              
-             </div>
+            <div
+              class="menu-item flex h-[100%] w-[100%] flex-col items-center justify-center"
+            >
+              <div class="menu-item-con flex h-full flex-col items-start gap-4">
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">About</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Works</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Contact</h1>
+                </a>
+
+                <a class="flex hover:text-[#61677A]" href="">
+                  <i class="si-arrow-up-left text-[5vh]"></i>
+                  <h1 class="text-5xl font-semibold">Loacation</h1>
+                </a>
+              </div>
             </div>
-            </div>
-  
+          </div>
         </div>
 
+        <div class="hero-con h-full w-full bg-[#7b9efd00] px-[2vh]">
+          <div
+            class="hero-tagline-con flex flex-col items-center justify-center bg-[#f8020200] sm:items-start sm:pl-5"
+          >
+            <h1
+              class="text-5xl font-bold text-[#fff] hover:text-[#CAEEC2] sm:text-8xl lg:text-9xl"
+            >
+              Your Event,
+            </h1>
+            <h1
+              class="text-5xl font-bold text-[#fff] hover:text-[#CAEEC2] sm:text-8xl lg:text-9xl"
+            >
+              Our Passion
+            </h1>
 
-        <div class="hero-con h-full w-full px-[2vh]  bg-[#7b9efd00] ">
-
-          <div class="hero-tagline-con  bg-[#f8020200] flex flex-col items-center justify-center  sm:items-start sm:pl-5  ">
-              <h1 class="text-5xl sm:text-8xl lg:text-9xl text-[#fff] font-bold hover:text-[#CAEEC2]" >Your Event, </h1>
-              <h1 class="text-5xl sm:text-8xl lg:text-9xl text-[#fff] font-bold hover:text-[#CAEEC2]" >Our Passion </h1>
-
-              <h1 class="text-[#D8D9DA]  text-lg sm:text-4xl lg:text-5xl pt-4 sm:pl-2 hover:text-[#90EE91] " > Excellence in Every Moment.</h1> 
+            <h1
+              class="pt-4 text-lg text-[#D8D9DA] hover:text-[#90EE91] sm:pl-2 sm:text-4xl lg:text-5xl"
+            >
+              Excellence in Every Moment.
+            </h1>
           </div>
 
-          <div class="hero-content-con flex items-center justify-center h-[50vh] sm:h-[60vh] xl:h-[80vh] xl:mx-5  w-auto my-7   overflow-hidden rounded-xl  ">
+          <div
+            class="hero-content-con my-7 flex h-[50vh] w-auto items-center justify-center overflow-hidden rounded-xl sm:h-[60vh] xl:mx-5 xl:h-[80vh]"
+          >
             <!-- <img class=" h-full w-full object-cover " src="img/Hero.jpg" alt=""> -->
-            <video autoplay muted loop src="/video/intro.mp4" class="h-full w-full object-cover"  ></video>
+            <video
+              autoplay
+              muted
+              loop
+              src="/video/intro.mp4"
+              class="h-full w-full object-cover"
+            ></video>
           </div>
-
-
         </div>
-
       </div>
-
-
-
-
 
       <!--------------------------------------------------Page 3 ------------------------------------------------>
 
-
-      <div class="page3 min-h-screen bg-[#171717]  px-[2vh] ">
-
-        <div class="services-con w-full  text-[#FFF6E0] pt-1 xl:pt-5  flex flex-col items-center justify-center ">
-          
-          <h1 class="text-3xl sm:text-8xl font-semibold py-10  hover:text-[#fff] text-center text-[#90EE91]" >Services We Provide</h1>
-
+      <div class="page3 min-h-screen bg-[#171717] px-[2vh]">
+        <div
+          class="services-con flex w-full flex-col items-center justify-center pt-1 text-[#FFF6E0] xl:pt-5"
+        >
+          <h1
+            class="py-10 text-center text-3xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+          >
+            Services We Provide
+          </h1>
         </div>
 
-        <div class="s-names text-[#fff] flex items-center justify-center gap-4 flex-wrap py-6 ">
+        <div
+          class="s-names flex flex-wrap items-center justify-center gap-4 py-6 text-[#fff]"
+        >
+          <a href=""><div class="adv h-auto w-[45vh] p-2 pt-10">
+              <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+                Advertisement
+              </h2>
+              <h3 class="text-sm font-thin">All Branding solutions</h3>
+              <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+                KNOW MORE ↗
+              </h3>
 
-          <a href=""><div class="adv  h-auto w-[45vh] p-2 pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Advertisement </h2>
-            <h3 class="text-sm   font-thin ">All Branding solutions</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
+              <div
+                class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="img/bannar.jpg"
+                  alt=""
+                />
+              </div></div
+          ></a>
+
+          <a href=""
+            ><div class="Corporate h-auto w-[45vh] p-2 pt-10">
+              <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+                Corporate Events
+              </h2>
+              <h3 class="text-sm font-thin">
+                Create impactful corporate events
+              </h3>
+              <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+                KNOW MORE ↗
+              </h3>
+
+              <div
+                class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="https://images.unsplash.com/photo-1561489396-888724a1543d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvcnBvcmF0ZSUyMGV2ZW50fGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div></div
+          ></a>
 
 
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="img/bannar.jpg" alt="">
+          <a href=""
+          ><div class="Entertainment h-auto w-[45vh] p-2 pt-10">
+            <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+              Entertainment Events
+            </h2>
+            <h3 class="text-sm font-thin">All Kind of Stages</h3>
+            <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+              KNOW MORE ↗
+            </h3>
+
+            <div
+              class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg"
+                alt=""
+              />
             </div>
           </div></a>
 
+          <a href="./wedding.html"
+            ><div class="wedding h-auto w-[45vh] p-2 pt-10">
+              <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+                Special Events
+              </h2>
+              <h3 class="text-sm font-thin">Make your dreem weddingsetup</h3>
+              <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+                KNOW MORE ↗
+              </h3>
 
-          <a href=""><div class="Corporate h-auto w-[45vh] p-2 pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Corporate Events</h2>
-            <h3 class="text-sm   font-thin ">Create impactful corporate events</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
+              <div
+                class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="img/wedding.jpg"
+                  alt=""
+                />
+              </div>
+            </div> </a>
 
+           
 
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1561489396-888724a1543d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvcnBvcmF0ZSUyMGV2ZW50fGVufDB8fDB8fHww" alt="">
-            </div>
-          </div></a>
-
-          <a href="./wedding.html" ><div class="wedding h-auto w-[45vh] p-2 pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Special Events</h2>
-            <h3 class="text-sm   font-thin ">Make your dreem weddingsetup</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
-
-
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="img/wedding.jpg" alt="">
-            </div>
-          </div>
-
-          <a href=""><div class="Entertainment h-auto w-[45vh] p-2 pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Entertainment Events</h2>
-            <h3 class="text-sm   font-thin ">All Kind of Stages</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
-
-
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="">
-            </div>
-          </div></a>
-
-          <!-- <a href=""><div class="light h-auto w-[45vh] p-2 pt-10  ">
+            <!-- <a href=""><div class="light h-auto w-[45vh] p-2 pt-10  ">
             <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Stage Lights</h2>
             <h3 class="text-sm   font-thin ">Provide all typs of lights</h3>
 
@@ -155,262 +235,430 @@
           </div></a> -->
 
 
-          <a href=""><div class="sports h-auto w-[45vh] p-2 pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Sports Events </h2>
-            <h3 class="text-sm   font-thin ">All typs of Sports Events</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
+          <a href=""
+            ><div class="political h-auto w-[45vh] p-2 pt-10">
+              <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+                Political Events
+              </h2>
+              <h3 class="text-sm font-thin">All kind of political events</h3>
+              <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+                KNOW MORE ↗
+              </h3>
 
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="https://static.vecteezy.com/system/resources/thumbnails/035/598/351/small_2x/ai-generated-champion-award-trophy-cup-winner-concept-ai-generated-photo.jpg" alt="">
-            </div>
-          </div></a>
+              <div
+                class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="https://st.depositphotos.com/1760261/1347/i/380/depositphotos_13472069-stock-photo-podium-on-stage.jpg"
+                  alt=""
+                />
+              </div></div
+          ></a>
 
+
+            <a href=""
+              ><div class="sports h-auto w-[45vh] p-2 pt-10">
+                <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">
+                  Sports Events
+                </h2>
+                <h3 class="text-sm font-thin">All typs of Sports Events</h3>
+                <h3 class="pt-1 text-xs font-thin text-[#90EE91]">
+                  KNOW MORE ↗
+                </h3>
+
+                <div
+                  class="sr-i-con mt-4 h-[40vh] w-[40vh] overflow-hidden rounded-b-xl"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/035/598/351/small_2x/ai-generated-champion-award-trophy-cup-winner-concept-ai-generated-photo.jpg"
+                    alt=""
+                  />
+                </div></div
+            ></a>
           </a>
 
           
 
-
-          <a href=""><div class="stall h-auto w-[45vh] p-2  pt-10  ">
-            <h2 class="text-3xl pb-2 hover:text-[#CAEEC2] font-semibold " >Event Stall </h2>
-            <h3 class="text-sm   font-thin ">All kind of stalls</h3>
-            <h3 class="text-xs   font-thin text-[#90EE91] pt-1 ">KNOW MORE ↗</h3>
-
-
-            <div class="sr-i-con h-[40vh] w-[40vh] mt-4 rounded-b-xl overflow-hidden">
-              <img class="h-full w-full object-cover" src="img/stall.jpg" alt="">
-            </div>
-          </div></a>
-
-          
-
-
         </div>
-
-
-
       </div>
 
-<!-- ------------------------------------------------Aout Us-------------------------------------------------- -->
+      <!-- ------------------------------------------------Aout Us-------------------------------------------------- -->
 
+      <div class="aboutUs min-h-screen bg-[#171717] px-[2vh]">
+        <div
+          class="about-con flex w-full flex-col items-center justify-center pt-1 text-[#FFF6E0] xl:pt-5"
+        >
+          <h1
+            class="pb-10 text-center text-4xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+          >
+            About Us.
+          </h1>
 
-<div class="aboutUs min-h-screen bg-[#171717]  px-[2vh] ">
+          <div class="about-text rounded-xl bg-[#61677a18] p-5">
+            <p class="pb-2 text-center text-sm font-thin hover:text-[#90EE91]">
+              Welcome to <i class="font-serif">SH Managment</i>, where we turn
+              your visions into unforgettable experiences!
+            </p>
 
+            <p class="pb-2 text-center text-sm font-thin hover:text-[#90EE91]">
+              At <i class="font-serif">SH Managment</i>, we specialize in
+              creating extraordinary events that leave lasting impressions.
+              Whether you're planning a corporate gala, a dreamy wedding, a
+              milestone birthday, or <br />
+              any special occasion, our dedicated team is here to make it
+              happen. With years of experience in event planning and management,
+              we are committed to delivering excellence at every step.
+            </p>
+          </div>
+        </div>
 
-        
-  <div class="about-con w-full  text-[#FFF6E0] pt-1 xl:pt-5  flex flex-col items-center justify-center ">
-    
-    <h1 class="text-4xl sm:text-8xl font-semibold pb-10 hover:text-[#fff] text-center text-[#90EE91]" >About Us.</h1>
+        <!-- -------------------------------------------Experience-------------------------------- -->
 
-    <div class="about-text bg-[#61677a18] rounded-xl p-5 ">
-             <p class="text-sm  font-thin pb-2 text-center hover:text-[#90EE91]" >Welcome to <i class="font-serif">SH Managment</i>, where we turn your visions into unforgettable experiences!</p>
+        <div
+          class="about-con2 flex w-full flex-wrap items-center justify-center text-[#fff]"
+        >
+          <div
+            class="info-con flex h-[50vh] w-[50vh] flex-col items-center justify-center text-center"
+          >
+            <h1 class="pb-4 text-7xl font-bold hover:text-[#CAEEC2]">8+</h1>
+            <h1
+              class="pb-2 text-3xl font-semibold text-[#61677A] hover:text-[#90EE91]"
+            >
+              Years Experience
+            </h1>
+            <p
+              class="text-balance font-thin text-[#FFF6E0] hover:text-[#90EE91]"
+            >
+              We were work from more than <br />
+              8 years and we are still on top.
+            </p>
+          </div>
 
-    <p class="text-sm font-thin pb-2 text-center hover:text-[#90EE91] " > At <i class="font-serif">SH Managment</i>, we specialize in creating extraordinary events that leave lasting impressions. Whether you're planning a corporate gala, a dreamy wedding, a milestone birthday, or <br> any special occasion, our dedicated team is here to make it happen. With years of experience in event planning and management, we are committed to delivering excellence at every step.</p>
-    </div>
+          <div
+            class="info-con flex h-[50vh] w-[50vh] flex-col items-center justify-center text-center"
+          >
+            <h1 class="pb-4 text-7xl font-bold hover:text-[#CAEEC2]">100+</h1>
+            <h1
+              class="pb-2 text-3xl font-semibold text-[#61677A] hover:text-[#90EE91]"
+            >
+              Satisfied Clients
+            </h1>
+            <p
+              class="text-balance font-thin text-[#FFF6E0] hover:text-[#90EE91]"
+            >
+              We have many returning customers <br />
+              that got to trust us as a solid partner.
+            </p>
+          </div>
 
-  </div>
+          <div
+            class="info-con flex h-[50vh] w-[50vh] flex-col items-center justify-center text-center"
+          >
+            <h1 class="pb-4 text-7xl font-bold hover:text-[#CAEEC2]">150+</h1>
+            <h1
+              class="pb-2 text-3xl font-semibold text-[#61677A] hover:text-[#90EE91]"
+            >
+              Project Done
+            </h1>
+            <p
+              class="text-balance font-thin text-[#FFF6E0] hover:text-[#90EE91]"
+            >
+              Successfully Completed 150+ <br />Projectwhy we've been for so
+              long.
+            </p>
+          </div>
 
-  <!-- -------------------------------------------Experience-------------------------------- -->
-
-  <div class="about-con2  w-full text-[#fff] flex items-center justify-center flex-wrap ">
-    
-    <div class="info-con h-[50vh] w-[50vh]  text-center flex flex-col items-center justify-center">
-      <h1 class="text-7xl font-bold pb-4 hover:text-[#CAEEC2]">8+</h1>
-      <h1 class="text-3xl text-[#61677A]   font-semibold pb-2 hover:text-[#90EE91]">Years Experience</h1>
-      <p class=" text-[#FFF6E0] text-balance font-thin hover:text-[#90EE91]">We were work from more than <br> 8 years 
-        and we are still on top.</p>
-    </div> 
-
-    <div class="info-con h-[50vh] w-[50vh]  text-center flex flex-col items-center justify-center">
-      <h1 class="text-7xl font-bold pb-4 hover:text-[#CAEEC2]">100+</h1>
-      <h1 class="text-3xl  text-[#61677A]  font-semibold pb-2 hover:text-[#90EE91]">Satisfied Clients</h1>
-      <p class=" text-[#FFF6E0] text-balance font-thin hover:text-[#90EE91]">We have many returning customers <br> that got to trust us as a solid partner.</p>
-    </div>
-
-    <div class="info-con h-[50vh] w-[50vh]  text-center flex flex-col items-center justify-center">
-      <h1 class="text-7xl font-bold pb-4 hover:text-[#CAEEC2]">150+</h1>
-      <h1 class="text-3xl  text-[#61677A]  font-semibold pb-2 hover:text-[#90EE91]">Project Done</h1>
-       <p class=" text-[#FFF6E0] text-balance font-thin hover:text-[#90EE91]"> Successfully Completed 150+ <br>Projectwhy we've been for so long.</p>
-    </div>
-
-    <!-- <div class="info-con h-[50vh] w-[50vh] bg-[#6af06a]">
+          <!-- <div class="info-con h-[50vh] w-[50vh] bg-[#6af06a]">
 
     </div> -->
-    
-  </div>
+        </div>
 
+        <!-- ----------------------------------------Work with----------------------------- -->
 
-  <!-- ----------------------------------------Work with----------------------------- -->
-
-  <div class="work-with-con  h-auto w-full p-4">
-    <h1 class="text-4xl font-semibold pb-10 text-[#fff] text-center hover:text-[#90EE91]" >We Work With</h1>
-    <div class="work-img-con flex items-center justify-center flex-wrap gap-5">
-
-      <!-- <div class="img-card h-[15vh] w-[15vh] grayscale hover:grayscale-0  rounded-2xl overflow-hidden ">
+        <div class="work-with-con h-auto w-full p-4">
+          <h1
+            class="pb-10 text-center text-4xl font-semibold text-[#fff] hover:text-[#90EE91]"
+          >
+            We Work With
+          </h1>
+          <div
+            class="work-img-con flex flex-wrap items-center justify-center gap-5"
+          >
+            <!-- <div class="img-card h-[15vh] w-[15vh] grayscale hover:grayscale-0  rounded-2xl overflow-hidden ">
         <img class="h-full w-full object-cover " src="img/adamas.png" alt="">
       </div> -->
 
-      <div class="img-card h-[15vh] w-[15vh]  grayscale hover:grayscale-0  bg-[#fff] rounded-2xl overflow-hidden ">
-        <img class="h-full w-full object-cover" src="img/WBMDFC.png" alt="">
-      </div>
+            <div
+              class="img-card h-[15vh] w-[15vh] overflow-hidden rounded-2xl bg-[#fff] grayscale hover:grayscale-0"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="img/WBMDFC.png"
+                alt=""
+              />
+            </div>
 
-      <!-- <div class="img-card h-[15vh] w-[15vh]  grayscale hover:grayscale-0  bg-green-700 rounded-2xl overflow-hidden ">
+            <!-- <div class="img-card h-[15vh] w-[15vh]  grayscale hover:grayscale-0  bg-green-700 rounded-2xl overflow-hidden ">
         <img class="h-full w-full object-cover" src="img/adamas.png" alt="">
       </div> -->
-
-    </div>
-  </div>
-
-
-</div>
+          </div>
+        </div>
+      </div>
 
       <!--------------------------------------------------Page 4 ------------------------------------------------>
 
+      <div class="page4 min-h-screen bg-[#171717] p-[2vh]">
+        <h1
+          class="pb-20 pt-8 text-center text-5xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+        >
+          Contact Us
+        </h1>
 
-      <div class="page4 min-h-screen bg-[#171717]  p-[2vh] "> 
+        <div class="c-con flex items-center justify-center">
+          <div
+            class="c-box flex w-full flex-wrap overflow-hidden rounded-lg bg-[#FFF6E0] sm:w-[80vw]"
+          >
+            <div
+              class="info-con flex h-auto w-full flex-col items-start justify-start bg-zinc-100 px-8 py-5 text-[#000] sm:h-auto sm:w-[40vw] md:w-[30vw] md:pl-8"
+            >
+              <h2 class="text-center text-2xl font-bold">Info</h2>
 
+              <div
+                class="flex h-full flex-col items-start justify-start gap-4 pt-3"
+              >
+                <i class="pb-2 pt-4 font-semibold sm:text-[2.8vh]"
+                  >SH Event Management
+                </i>
 
-        <h1 class="text-5xl sm:text-8xl font-semibold pt-8 pb-20   hover:text-[#fff] text-center text-[#90EE91]" >Contact Us</h1>
+                <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                  <p class="text-balance hover:text-[#ff2433]">
+                    <i
+                      class="bi bi-geo-alt-fill text-[2.5vh] text-[#ff2433]"
+                    ></i>
+                    398, Ramkrishnapur Rd, near Jagadighata Market, Barasat,
+                    Kolkata, West Bengal 700125
+                  </p>
+                </div>
 
-        <div class="c-con  flex items-center justify-center">
+                <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                  <p class="hover:text-[#5588e8]">
+                    <i
+                      class="bi bi-telephone-inbound-fill text-[2.5vh] text-[#5588e8]"
+                    ></i>
+                    +91 8536994713
+                  </p>
+                </div>
 
-          <div class="c-box bg-[#FFF6E0]  w-full sm:w-[80vw] rounded-lg flex flex-wrap overflow-hidden">
+                <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                  <p class="hover:text-[#39a137]">
+                    <i class="bi bi-whatsapp text-[2.5vh] text-[#39a137]"></i>
+                    +91 7872524411
+                  </p>
+                </div>
 
-
-            <div class="info-con text-[#000]  bg-zinc-100 h-auto sm:h-auto w-full sm:w-[40vw] md:w-[30vw] flex justify-start items-start  flex-col py-5 px-8 md:pl-8">
-              <h2 class="text-2xl  font-bold text-center  " >Info</h2>
-
-              <div class="h-full flex flex-col items-start justify-start pt-3 gap-4  ">
-                <i class="font-semibold pt-4 pb-2 sm:text-[2.8vh] ">SH Event Management </i>
-
-              <div class="info-t text-[2vh] sm:text-[2.2vh] pb-1   ">
-                <p class=" text-balance hover:text-[#ff2433] " > <i class="bi bi-geo-alt-fill text-[2.5vh] text-[#ff2433]"></i>  398, Ramkrishnapur Rd, near  Jagadighata Market, Barasat, Kolkata, West Bengal 700125</p>
+                <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                  <p class="hover:text-[#e8555a]">
+                    <i
+                      class="bi bi-envelope-at-fill text-[2.5vh] text-[#e8555a]"
+                    ></i>
+                    shevent0786@gmail.com
+                  </p>
+                </div>
               </div>
-
-
-              <div class="info-t text-[2vh] sm:text-[2.2vh] pb-1  ">
-                <p class="hover:text-[#5588e8]  " ><i class="bi bi-telephone-inbound-fill text-[2.5vh] text-[#5588e8]"></i>   +91 8536994713</p>
-              </div>
-
-              <div class="info-t text-[2vh] sm:text-[2.2vh] pb-1  ">
-                <p class="hover:text-[#39a137] " ><i class="bi bi-whatsapp text-[2.5vh] text-[#39a137] "></i> +91 7872524411 </p>
-              </div>
-
-              <div class="info-t text-[2vh] sm:text-[2.2vh] pb-1  ">
-                <p class=" hover:text-[#e8555a] " ><i class="bi bi-envelope-at-fill text-[2.5vh] text-[#e8555a]"></i> shevent0786@gmail.com</p>
-              </div>
-              </div>
-
             </div>
 
-            <div class="mail-us-con bg-gray-200 h-auto w-full sm:w-[40vw] md:w-[50vw]">
-
-                <form action="/send-mail" method="POST" class="bg-[#f5d8d849] shadow-md  px-8 pt-6 pb-8 ">
-                    <h2 class="text-2xl font-bold mb-6 text-center">Send Mail</h2>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
-                            Name
-                        </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" name="name">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                            Email
-                        </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
-                            Subject
-                        </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Subject" name="subject">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
-                            Message
-                        </label>
-                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your Message" name="message" rows="4"></textarea>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <button class="shadow bg-[#171717] hover:bg-[#ffffff] hover:text-[#171717] ease-in-out text-[#fff] font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline" type="submit">
-                            Send
-                        </button>
-                    </div>
-                </form>
-            
-
+            <div
+              class="mail-us-con h-auto w-full bg-gray-200 sm:w-[40vw] md:w-[50vw]"
+            >
+              <form
+                action="/send-mail"
+                method="POST"
+                class="bg-[#f5d8d849] px-8 pb-8 pt-6 shadow-md"
+              >
+                <h2 class="mb-6 text-center text-2xl font-bold">Send Mail</h2>
+                <div class="mb-4">
+                  <label
+                    class="mb-2 block text-sm font-bold text-gray-700"
+                    for="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="mb-2 block text-sm font-bold text-gray-700"
+                    for="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                    id="email"
+                    type="email"
+                    placeholder="Your Email"
+                    name="email"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="mb-2 block text-sm font-bold text-gray-700"
+                    for="subject"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                    id="subject"
+                    type="text"
+                    placeholder="Subject"
+                    name="subject"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    class="mb-2 block text-sm font-bold text-gray-700"
+                    for="message"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                    id="message"
+                    placeholder="Your Message"
+                    name="message"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                  <button
+                    class="focus:shadow-outline rounded bg-[#171717] px-6 py-2 font-bold text-[#fff] shadow ease-in-out hover:bg-[#ffffff] hover:text-[#171717] focus:outline-none"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
             </div>
-
           </div>
-
         </div>
-
-
-
       </div>
 
+      <!--------------------------------------------------Page 5 ------------------------------------------------>
 
-<!--------------------------------------------------Page 5 ------------------------------------------------>
+      <div class="page5 min-h-screen bg-[#171717] p-[2vh]">
+        <h1
+          class="pb-20 pt-8 text-center text-5xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+        >
+          Location
+        </h1>
 
-      <div class="page5 min-h-screen bg-[#171717]  p-[2vh] ">
-
-        <h1 class="text-5xl sm:text-8xl font-semibold pt-8 pb-20   hover:text-[#fff] text-center text-[#90EE91]" >Location </h1>
-        
         <!--------------------------------------------------Map------------------------------------------------>
-        <div class="map-con w-auto h-[60vh]  m-[2vh]  overflow-hidden relative flex items-center justify-center">
-          <div class="map-iframe-container w-[80vw] h-full relative ">
-              <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.11266077077!2d88.49675327194784!3d22.73217058480657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2sBrainware%20University!5e1!3m2!1sen!2sin!4v1722870962674!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div
+          class="map-con relative m-[2vh] flex h-[60vh] w-auto items-center justify-center overflow-hidden"
+        >
+          <div class="map-iframe-container relative h-full w-[80vw]">
+            <iframe
+              class="absolute left-0 top-0 h-full w-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.11266077077!2d88.49675327194784!3d22.73217058480657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2sBrainware%20University!5e1!3m2!1sen!2sin!4v1722870962674!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-      </div>
-      
-
-      </div>
-
-
-
-<!--------------------------------------------------Footer ------------------------------------------------>
-
-
-      <div class="footer h-auto bg-[#171717]  p-[2vh] ">
-
-        <div class="f-con bg-[#4949491e] min-h-[40vh]  w-auto flex flex-wrap items-center justify-around text-white gap-5 rounded-xl py-10">
-
-          <div class="f-logo h-full w-[35vh] bg-slate-8003 p-2">
-            <i class="font-semibold text-xl hover:text-[#90EE91] " >  SH Event Management</i>
-            <img class="h-[25vh] w-[15vh] object-cover " src="img/Logo-sh.png" alt="">
-
-          </div>
-
-          <div class="f-s-link h-full w-[35vh] bg-slate-8003 p-2">
-           <i class="font-semibold text-xl hover:text-[#90EE91] " >Social Media </i>
-           <div class="s-links flex flex-col pt-3 ">
-
-            <a class="hover:text-[#3978f7]" href="" ><i class="bi bi-linkedin  text-[3vh]"></i> <i class="">&nbsp; Linkedin</i> </a>
-            <a class="hover:text-[#f24de7]" href="" ><i class="bi bi-instagram  text-[3vh]"></i> <i class="">&nbsp; Instagram</i></a>
-            <a class="hover:text-[#959596]" href="" ><i class="bi bi-twitter-x  text-[3vh]"></i> <i class="">&nbsp; Twitter X</i> </a>
-            <a class="hover:text-[#3978f7]" href="" ><i class="bi bi-facebook  text-[3vh]"></i> <i class="">&nbsp; Facebook</i></a>
-            
-            
-           </div>
-          </div>
-
-          <div class="f-info h-full w-[35vh] bg-slate-8003 p-2 ">
-            <a class="flex hover:text-[#90EE91] text-[3vh] font-semibold " href=""> <i class="si-arrow-up-left text-[3vh] "></i> About </a>
-  
-              <a class="flex hover:text-[#90EE91] text-[3vh] font-semibold " href=""> <i class="si-arrow-up-left text-[3vh]"></i>Works</a>
-  
-              <a class="flex hover:text-[#90EE91] text-[3vh] font-semibold " href=""> <i class="si-arrow-up-left text-[3vh]"></i> Contact</a>
-  
-              <a class="flex hover:text-[#90EE91] text-[3vh] font-semibold " href=""> <i class="si-arrow-up-left text-[3vh]"></i> Loacation</a>
-  
-          </div>
-
-        </div>
-
-        <div class="copyr-con text-white w-full h-[10vh] flex items-center justify-center ">
-          <p class="font-thin  text-sm  " ><i class="bi bi-c-circle"></i> 2024 SH Events Management. All Rights Reserved. </p>
         </div>
       </div>
 
+      <!--------------------------------------------------Footer ------------------------------------------------>
+
+      <div class="footer h-auto bg-[#171717] p-[2vh]">
+        <div
+          class="f-con flex min-h-[40vh] w-auto flex-wrap items-center justify-around gap-5 rounded-xl bg-[#4949491e] py-10 text-white"
+        >
+          <div class="f-logo bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]">
+              SH Event Management</i
+            >
+            <img
+              class="h-[25vh] w-[15vh] object-cover"
+              src="img/Logo-sh.png"
+              alt=""
+            />
+          </div>
+
+          <div class="f-s-link bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]"
+              >Social Media
+            </i>
+            <div class="s-links flex flex-col pt-3">
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-linkedin text-[3vh]"></i>
+                <i class="">&nbsp; Linkedin</i>
+              </a>
+              <a class="hover:text-[#f24de7]" href=""
+                ><i class="bi bi-instagram text-[3vh]"></i>
+                <i class="">&nbsp; Instagram</i></a
+              >
+              <a class="hover:text-[#959596]" href=""
+                ><i class="bi bi-twitter-x text-[3vh]"></i>
+                <i class="">&nbsp; Twitter X</i>
+              </a>
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-facebook text-[3vh]"></i>
+                <i class="">&nbsp; Facebook</i></a
+              >
+            </div>
+          </div>
+
+          <div class="f-info bg-slate-8003 h-full w-[35vh] p-2">
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> About
+            </a>
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i>Works</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Contact</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href=""
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Loacation</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="copyr-con flex h-[10vh] w-full items-center justify-center text-white"
+        >
+          <p class="text-sm font-thin">
+            <i class="bi bi-c-circle"></i> 2024 SH Events Management. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>

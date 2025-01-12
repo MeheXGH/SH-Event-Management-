@@ -7,7 +7,10 @@
 
     <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -21,20 +24,22 @@
   </head>
 
   <body>
-    <div class="main relative h-screen">
-      <div class="page1 relative  overflow-hidden bg-[#171717]">
+    <div class="main relative h-screen bg-[#171717] text-white">
+      <div class="page1 relative overflow-hidden bg-[#171717]">
         <div
-          class="nav-con flex h-[15vh]  items-center justify-between bg-[#171717] px-[2vh]"
+          class="nav-con flex h-[15vh] items-center justify-between bg-[#171717] px-[2vh]"
         >
-        <div class="logo-con flex h-[15vh] w-[15vh] items-center justify-center overflow-hidden" >
-          <a href="">
-            <img
-              class=" w-auto h-[15vh] object-cover"
-              src="img/Logo-sh.png"
-              alt="SH logo"
-            />
-          </a>
-        </div>
+          <div
+            class="logo-con flex h-[15vh] w-[15vh] items-center justify-center overflow-hidden"
+          >
+            <a href="">
+              <img
+                class="h-[15vh] w-auto object-cover"
+                src="img/Logo-sh.png"
+                alt="SH logo"
+              />
+            </a>
+          </div>
 
           <div
             class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]"
@@ -82,52 +87,125 @@
             </div>
           </div>
         </div>
+
+        <div class="flex flex-col items-center justify-center pb-10">
+          <h1
+            class="pb-5 text-center text-4xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+          >
+            Special Events
+          </h1>
+          <p
+            class="w-[80vw] text-center text-xs text-[#ffffff93] sm:w-[50vw] sm:text-lg"
+          >
+            Make your special moments unforgettable with our professional event
+            management services. From weddings to milestone celebrations, we
+            handle every detail with precision and creativity to turn your
+            vision into reality.
+          </p>
         </div>
-
-
-        <h1 class="text-4xl sm:text-8xl font-semibold pb-10 hover:text-[#fff] text-center text-[#90EE91] bg-[#171717]" >Special Events</h1>
-        <div class="ig-con">
-            <div class="wd-img-con ">
-
-                <div class="wd-con" onclick="openSlider()">
-                    <img src="./img/wd (1).jpg" alt="" />
-                    <p>Wedding setup 1</p>
-                  </div>
-
-
-                            <!-- Image Slider Modal -->
-                <div id="image-slider-modal" class="modal">
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                        <img src="./img/wd (1).jpg" alt="Wedding Setup 1" />
-                        </div>
-                        <div class="swiper-slide">
-                        <img src="./img/wd (2).jpg" alt="Wedding Setup 2" />
-                        </div>
-                        <div class="swiper-slide">
-                        <img src="./img/wd (3).jpg" alt="Wedding Setup 3" />
-                        </div>
-                    </div>
-                    <!-- Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    </div>
-                    <button class="close-btn" onclick="closeSlider()">Close</button>
-                </div>
-
-
-
-
-
-
-
-               <div class="wd-con relative ">
-                <img src="./img/wd (2).jpg" alt="" class="">
-                <p> wedding setup 2 </p>
-               </div>
+        <div class="ig-con px-10 min-h-screen ">
+          <div class="wd-img-con ">
+            <!-- First Trigger -->
+            <div class="wd-con" onclick="openSlider('modal1')">
+              <img src="./img/wd (1).jpg" alt="" />
+              <p>Wedding setup 1</p>
             </div>
+
+            <!-- First Modal -->
+            <div id="modal1" class="modal">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/wd (1).jpg" alt="Wedding Setup 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (10).jpg" alt="Wedding Setup 2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (11).jpg" alt="Wedding Setup 3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (9).jpg" alt="Wedding Setup 3" />
+                  </div>
+                </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <button class="close-btn" onclick="closeSlider('modal1')">
+                Close
+              </button>
+            </div>
+
+            <!-- Second Trigger -->
+            <div class="wd-con" onclick="openSlider('modal2')">
+              <img src="./img/wd (2).jpg" alt="" />
+              <p>Wedding setup 2</p>
+            </div>
+
+            <!-- Second Modal -->
+            <div id="modal2" class="modal">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/wd (2).jpg" alt="Wedding Setup 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (3).jpg" alt="Wedding Setup 2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (5).jpg" alt="Wedding Setup 3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (6).jpg" alt="Wedding Setup 4" />
+                  </div>
+                </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <button class="close-btn" onclick="closeSlider('modal2')">
+                Close
+              </button>
+            </div>
+
+
+            <!-- 3rd Trigger -->
+            <div class="wd-con" onclick="openSlider('modal3')">
+              <img src="./img/wd (7).jpg" alt="" />
+              <p>Wedding setup 3</p>
+            </div>
+
+            <!-- 3rd Modal -->
+            <div id="modal3" class="modal">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/wd (7).jpg" alt="Wedding Setup 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (8).jpg" alt="Wedding Setup 2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/wd (4).jpg" alt="Wedding Setup 3" />
+                  </div>
+                </div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <button class="close-btn" onclick="closeSlider('modal3')">
+                Close
+              </button>
+            </div>
+
+
+            
+
+          </div>
         </div>
+      </div>
+
       <!--------------------------------------------------Footer ------------------------------------------------>
 
       <div class="footer h-auto bg-[#171717] p-[2vh]">

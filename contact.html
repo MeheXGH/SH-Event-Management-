@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main relative h-screen bg-[#171717] text-white">
+      <div class="page1 relative overflow-hidden bg-[#171717]">
+        <div
+          class="nav-con flex h-[15vh] items-center justify-between bg-[#171717] px-[2vh]"
+        >
+          <div
+            class="logo-con flex h-[10vh] w-[10vh] items-center justify-center overflow-hidden"
+          >
+          <a href="./index.html">
+              <img
+                class="h-[10vh] w-auto object-cover"
+                src="img/Logo-sh.png"
+                alt="SH logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]"
+          >
+            <div class="icon-con flex items-center justify-center">
+              <i onclick="openSlide()" class="si-bars text-[8vh]"></i>
+            </div>
+          </div>
+
+          <div
+            class="menu-slid-con absolute -right-[100vw] top-0 z-50 h-[100vh] w-[100vw] bg-[#D8D9DA] px-[2vh] text-[#171717] sm:w-[40vw] sm:rounded-l-2xl lg:w-[30vw]"
+          >
+            <div
+              class="hb-close-con flex h-[15vh] items-end justify-end hover:text-[#61677A]"
+            >
+              <i
+                onclick="closeSlide()"
+                class="si-close absolute z-10 text-[9vh]"
+              ></i>
+            </div>
+            <div
+              class="menu-item flex h-[100%] w-[100%] flex-col items-center justify-center"
+            >
+              <div class="menu-item-con flex h-full flex-col items-start gap-4">
+                <a class="flex hover:text-[#61677A]" href="./about.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">About</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./works.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Works</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./contact.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Contact</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./location.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Loacation</h1>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="page4 min-h-screen bg-[#171717] p-[2vh]">
+            <h1
+              class="pb-20 pt-2 text-center text-5xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+            >
+              Contact Us
+            </h1>
+    
+            <div class="c-con flex items-center justify-center">
+              <div
+                class="c-box flex w-full flex-wrap overflow-hidden rounded-lg bg-[#FFF6E0] sm:w-[80vw]"
+              >
+                <div
+                  class="info-con flex h-auto w-full flex-col items-start justify-start bg-zinc-100 px-8 py-5 text-[#000] sm:h-auto sm:w-[40vw] md:w-[30vw] md:pl-8"
+                >
+                  <h2 class="text-center text-2xl font-bold">Info</h2>
+    
+                  <div
+                    class="flex h-full flex-col items-start justify-start gap-4 pt-3"
+                  >
+                    <i class="pb-2 pt-4 font-semibold sm:text-[2.8vh]"
+                      >SH Event Management
+                    </i>
+    
+                    <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                      <p class="text-balance hover:text-[#ff2433]">
+                        <i
+                          class="bi bi-geo-alt-fill text-[2.5vh] text-[#ff2433]"
+                        ></i>
+                        398, Ramkrishnapur Rd, near Jagadighata Market, Barasat,
+                        Kolkata, West Bengal 700125
+                      </p>
+                    </div>
+    
+                    <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                      <p class="hover:text-[#5588e8]">
+                        <i
+                          class="bi bi-telephone-inbound-fill text-[2.5vh] text-[#5588e8]"
+                        ></i>
+                        +91 8536994713
+                      </p>
+                    </div>
+    
+                    <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                      <p class="hover:text-[#39a137]">
+                        <i class="bi bi-whatsapp text-[2.5vh] text-[#39a137]"></i>
+                        +91 7872524411
+                      </p>
+                    </div>
+    
+                    <div class="info-t pb-1 text-[2vh] sm:text-[2.2vh]">
+                      <p class="hover:text-[#e8555a]">
+                        <i
+                          class="bi bi-envelope-at-fill text-[2.5vh] text-[#e8555a]"
+                        ></i>
+                        shevent0786@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div
+                  class="mail-us-con h-auto w-full bg-gray-200 sm:w-[40vw] md:w-[50vw]"
+                >
+                  <form
+                    action="/send-mail"
+                    method="POST"
+                    class="bg-[#f5d8d849] px-8 pb-8 pt-6 shadow-md"
+                  >
+                    <h2 class="mb-6 text-center text-2xl font-bold">Send Mail</h2>
+                    <div class="mb-4">
+                      <label
+                        class="mb-2 block text-sm font-bold text-gray-700"
+                        for="name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                        id="name"
+                        type="text"
+                        placeholder="Your Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label
+                        class="mb-2 block text-sm font-bold text-gray-700"
+                        for="email"
+                      >
+                        Email
+                      </label>
+                      <input
+                        class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                        id="email"
+                        type="email"
+                        placeholder="Your Email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label
+                        class="mb-2 block text-sm font-bold text-gray-700"
+                        for="subject"
+                      >
+                        Subject
+                      </label>
+                      <input
+                        class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                        id="subject"
+                        type="text"
+                        placeholder="Subject"
+                        name="subject"
+                      />
+                    </div>
+                    <div class="mb-6">
+                      <label
+                        class="mb-2 block text-sm font-bold text-gray-700"
+                        for="message"
+                      >
+                        Message
+                      </label>
+                      <textarea
+                        class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                        id="message"
+                        placeholder="Your Message"
+                        name="message"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <button
+                        class="focus:shadow-outline rounded bg-[#171717] px-6 py-2 font-bold text-[#fff] shadow ease-in-out hover:bg-[#ffffff] hover:text-[#171717] focus:outline-none"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+    
+              
+            </div>
+
+
+        
+      </div>
+
+      <!--------------------------------------------------Footer ------------------------------------------------>
+
+      <div class="footer h-auto bg-[#171717] p-[2vh]">
+        <div
+          class="f-con flex min-h-[40vh] w-auto flex-wrap items-center justify-around gap-5 rounded-xl bg-[#4949491e] py-10 text-white"
+        >
+          <div class="f-logo bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]">
+              SH Event Management</i
+            >
+            <img
+              class="h-[25vh] w-[25vh] object-cover"
+              src="img/Logo-sh.png"
+              alt=""
+            />
+          </div>
+
+          <div class="f-s-link bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]"
+              >Social Media
+            </i>
+            <div class="s-links flex flex-col pt-3">
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-linkedin text-[3vh]"></i>
+                <i class="">&nbsp; Linkedin</i>
+              </a>
+              <a class="hover:text-[#f24de7]" href=""
+                ><i class="bi bi-instagram text-[3vh]"></i>
+                <i class="">&nbsp; Instagram</i></a
+              >
+              <a class="hover:text-[#959596]" href=""
+                ><i class="bi bi-twitter-x text-[3vh]"></i>
+                <i class="">&nbsp; Twitter X</i>
+              </a>
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-facebook text-[3vh]"></i>
+                <i class="">&nbsp; Facebook</i></a
+              >
+            </div>
+          </div>
+
+          <div class="f-info bg-slate-8003 h-full w-[35vh] p-2">
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./about.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> About
+            </a>
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./works.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i>Works</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./contact.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Contact</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./location.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Loacation</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="copyr-con flex h-[10vh] w-full items-center justify-center text-white"
+        >
+          <p class="text-sm font-thin">
+            <i class="bi bi-c-circle"></i> 2024 SH Events Management. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

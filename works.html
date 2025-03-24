@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works</title>
+
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main relative h-screen bg-[#171717] text-white">
+      <div class="page1 relative overflow-hidden bg-[#171717]">
+        <div
+          class="nav-con flex h-[15vh] items-center justify-between bg-[#171717] px-[2vh]"
+        >
+          <div
+            class="logo-con flex h-[10vh] w-[10vh] items-center justify-center overflow-hidden"
+          >
+          <a href="./index.html">
+              <img
+                class="h-[10vh] w-auto object-cover"
+                src="img/Logo-sh.png"
+                alt="SH logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="menu-con flex h-[10vh] w-[10vh] items-center justify-center text-[#fff]"
+          >
+            <div class="icon-con flex items-center justify-center">
+              <i onclick="openSlide()" class="si-bars text-[8vh]"></i>
+            </div>
+          </div>
+
+          <div
+            class="menu-slid-con absolute -right-[100vw] top-0 z-50 h-[100vh] w-[100vw] bg-[#D8D9DA] px-[2vh] text-[#171717] sm:w-[40vw] sm:rounded-l-2xl lg:w-[30vw]"
+          >
+            <div
+              class="hb-close-con flex h-[15vh] items-end justify-end hover:text-[#61677A]"
+            >
+              <i
+                onclick="closeSlide()"
+                class="si-close absolute z-10 text-[9vh]"
+              ></i>
+            </div>
+            <div
+              class="menu-item flex h-[100%] w-[100%] flex-col items-center justify-center"
+            >
+              <div class="menu-item-con flex h-full flex-col items-start gap-4">
+                <a class="flex hover:text-[#61677A]" href="./about.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">About</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./works.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Works</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./contact.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Contact</h1>
+                  </a>
+  
+                  <a class="flex hover:text-[#61677A]" href="./location.html">
+                    <i class="si-arrow-up-left text-[5vh]"></i>
+                    <h1 class="text-5xl font-semibold">Loacation</h1>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="page3 min-h-screen bg-[#171717] px-[2vh]">
+            <div
+              class="services-con flex w-full flex-col items-center justify-center pt-1 text-[#FFF6E0] xl:pt-5"
+            >
+              <h1
+                class="py-10 text-center text-3xl font-semibold text-[#90EE91] hover:text-[#fff] sm:text-8xl"
+              >
+                Services We Provide
+              </h1>
+            </div>
+    
+            <div class="s-names flex flex-wrap items-center justify-center gap-4 py-6 text-[#fff]">
+    
+    
+              <a href="./advertisment.html">
+                <div class="adv h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="./img/hooding1.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/hooding.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Advertisement</h2>
+                  <h3 class="text-sm font-thin">The Branding solutions</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+    
+    
+    
+              
+              <a href="./corporate.html">
+                <div class="Corporate h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="./img/cor1.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/cor.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Corporate Events</h2>
+                  <h3 class="text-sm font-thin">Create impactful corporate events</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+              
+              <a href="./entertainment.html">
+                <div class="entertainment h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="./img/ent.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/ent2.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Entertainment </h2>
+                  <h3 class="text-sm font-thin">All Kinds of Stages</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+              
+              <a href="./special.html">
+                <div class="wedding h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="img/spc.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/spc2.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Special Events</h2>
+                  <h3 class="text-sm font-thin">Make your dream wedding setup</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+              
+              <a href="./political.html">
+                <div class="political h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="./img/pol.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/pol2.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Political Events</h2>
+                  <h3 class="text-sm font-thin">All kinds of political events</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+              
+              <a href="./sports.html">
+                <div class="sports h-auto p-2 pt-10 text-center">
+                  <div class="sr-i-con mt-4 sm:h-[60vh] sm:w-[60vh] w-[40vh] h-[40vh] overflow-hidden rounded-b-xl relative">
+                    <img class="h-full w-full object-cover absolute" src="./img/trp1.png" alt="" />
+                    <img class="h-full w-full object-cover absolute opacity-0 hover:opacity-100 transition-all duration-300 ease-in-out" src="./img/trp.png" alt="" />
+                  </div>
+                  <h2 class="pb-2 text-3xl font-semibold hover:text-[#CAEEC2]">Sports Events</h2>
+                  <h3 class="text-sm font-thin">All types of Sports Events</h3>
+                  <h3 class="pt-1 text-xs font-thin text-[#90EE91]">KNOW MORE ↗</h3>
+                </div>
+              </a>
+            </div>
+            
+            
+          </div>
+
+      <!--------------------------------------------------Footer ------------------------------------------------>
+
+      <div class="footer h-auto bg-[#171717] p-[2vh]">
+        <div
+          class="f-con flex min-h-[40vh] w-auto flex-wrap items-center justify-around gap-5 rounded-xl bg-[#4949491e] py-10 text-white"
+        >
+          <div class="f-logo bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]">
+              SH Event Management</i
+            >
+            <img
+              class="h-[25vh] w-[25vh] object-cover"
+              src="img/Logo-sh.png"
+              alt=""
+            />
+          </div>
+
+          <div class="f-s-link bg-slate-8003 h-full w-[35vh] p-2">
+            <i class="text-xl font-semibold hover:text-[#90EE91]"
+              >Social Media
+            </i>
+            <div class="s-links flex flex-col pt-3">
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-linkedin text-[3vh]"></i>
+                <i class="">&nbsp; Linkedin</i>
+              </a>
+              <a class="hover:text-[#f24de7]" href=""
+                ><i class="bi bi-instagram text-[3vh]"></i>
+                <i class="">&nbsp; Instagram</i></a
+              >
+              <a class="hover:text-[#959596]" href=""
+                ><i class="bi bi-twitter-x text-[3vh]"></i>
+                <i class="">&nbsp; Twitter X</i>
+              </a>
+              <a class="hover:text-[#3978f7]" href=""
+                ><i class="bi bi-facebook text-[3vh]"></i>
+                <i class="">&nbsp; Facebook</i></a
+              >
+            </div>
+          </div>
+
+          <div class="f-info bg-slate-8003 h-full w-[35vh] p-2">
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./about.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> About
+            </a>
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./works.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i>Works</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./contact.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Contact</a
+            >
+
+            <a
+              class="flex text-[3vh] font-semibold hover:text-[#90EE91]"
+              href="./location.html"
+            >
+              <i class="si-arrow-up-left text-[3vh]"></i> Loacation</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="copyr-con flex h-[10vh] w-full items-center justify-center text-white"
+        >
+          <p class="text-sm font-thin">
+            <i class="bi bi-c-circle"></i> 2024 SH Events Management. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

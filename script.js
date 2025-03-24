@@ -45,3 +45,16 @@ function closeSlider(modalId) {
   const modal = document.getElementById(modalId);
   modal.classList.remove('active');
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.from(".hero-tagline-con h1", {
+    x: -200, // Start position (off-screen left)
+    opacity: 0, // Fade in effect
+    duration: 1.5, // Animation duration
+    stagger: 0.5, // Delay between each h1 animation
+    ease: "power3.out", // Smooth easing effect
+  });
+});
+
